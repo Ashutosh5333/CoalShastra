@@ -9,6 +9,7 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import { MdArrowDropDown } from "react-icons/md";
+import MiddlePage from "./MiddlePage";
 
 const Dashboard = () => {
   return (
@@ -53,7 +54,7 @@ const Dashboard = () => {
         {/* -------------------------- Search bar and currency -------------------------- */}
 
         <Box
-          border="2px solid black"
+          border="1px solid black"
           w="90vw"
           m="auto"
           mt="5px"
@@ -101,6 +102,17 @@ const Dashboard = () => {
 
           </Box>
         </Box>
+
+
+          {/* -------------------------- */}
+
+
+       <MiddlePage/>
+
+
+
+
+
       </Box>
     </>
   );
