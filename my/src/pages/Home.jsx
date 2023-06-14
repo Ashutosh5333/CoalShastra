@@ -2,6 +2,7 @@ import React from 'react'
 import { Box ,Text} from '@chakra-ui/react'
 import Nav from '../component/Nav'
 import Dashboard from '../component/Dashboard'
+import { Dasboardfrom } from '../component/Dasboardfrom'
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
     <Nav/>
 
     <Dashboard/>
+   
+
 
 
     </Box>

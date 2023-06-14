@@ -9,7 +9,9 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import { MdArrowDropDown } from "react-icons/md";
+import { AiFillStar, AiOutlineShareAlt } from "react-icons/ai";
 import MiddlePage from "./MiddlePage";
+import { Dasboardfrom } from "./Dasboardfrom";
 
 const Dashboard = () => {
   return (
@@ -25,7 +27,7 @@ const Dashboard = () => {
         <Box border={"1px solid yellow"} w="90vw" m="auto" mt="10px" h="10vh">
           <Tabs position="relative" variant="unstyled">
             <TabList>
-              <Tab> * </Tab>
+              <Tab> <AiFillStar/> </Tab>
               <Tab>Fav </Tab>
               <Tab>USAGUJ </Tab>
               <Tab>WCL</Tab>
@@ -112,6 +114,7 @@ const Dashboard = () => {
 
 
 
+       <Dasboardfrom/>
 
       </Box>
     </>
