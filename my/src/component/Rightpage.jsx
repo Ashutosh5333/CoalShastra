@@ -11,7 +11,8 @@ import {SiHandshake} from "react-icons/si"
 const Rightpage = () => {
   return (
     <>
-      <Box  w="50%">
+      <Box  
+      w={{base:"80%",md:"80%",lg:"50%"}} m={{base:"auto"}} >
 
         <Box borderRadius={"5px"} bg="#c3dce3" p="1" w="90%" m="auto">
           <Text
@@ -118,7 +119,7 @@ const Rightpage = () => {
           gap="5"
           h="35vh"
         >
-          <Box border={"1px solid gray"} w="50%" p="2">
+          <Box w="50%" p="2">
             <Box
               borderBottom={"1px solid gray"}
               display={"flex"}
@@ -195,7 +196,7 @@ const Rightpage = () => {
             </Text>
           </Box>
 
-          <Box border={"1px solid gray"} w="50%" p="2">
+          <Box  w="50%" p="2">
             <Box
               borderBottom={"1px solid gray"}
               display={"flex"}
@@ -278,11 +279,12 @@ const Rightpage = () => {
         <Box
           display={"flex"}
           justifyContent={"space-between"}
+          
           gap="5"
           h="35vh"
           mt="10px" 
         >
-          <Box border={"1px solid gray"} w="50%" p="2">
+          <Box w="50%" p="2">
         
             <Text color={"gray"} fontSize={"0.8rem"}>
               {" "}
@@ -344,7 +346,7 @@ const Rightpage = () => {
             </Text>
           </Box>
 
-          <Box border={"1px solid gray"} w="50%" p="2">
+          <Box  w="50%" p="2">
            
 
             <Text color={"gray"} fontSize={"0.8rem"}>

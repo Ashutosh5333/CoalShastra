@@ -17,12 +17,14 @@ export const Dasboardfrom = () => {
 
   return (
     <>
-    <Box w="90vw" m="auto" h="100vh" mt="10px"  display={"flex"} justifyContent={"space-between"} >
+    <Box w="90vw" m="auto" h="100vh" mt="10px"  display={"flex"} justifyContent={"space-between"}
+    flexDirection={{base:"column",md:"column",lg:"row"}}
+     >
 
-     <Box w="50%">left </Box>
+     <Box w="50%"> </Box>
 
 
-     <Box  w="60%">
+     <Box   w={{base:"80%",md:"80%",lg:"65%"}} m={{base:"auto"}}>
      <Card
         w={{ base: "90%", md: "97%", lg: "97%" }}
         m="auto"

@@ -1,4 +1,4 @@
-import { Box, Button, Input, Select, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Input, Select, Text } from "@chakra-ui/react";
 import React from "react";
 import {
   Tabs,
@@ -9,7 +9,7 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import { MdArrowDropDown } from "react-icons/md";
-import { AiFillStar, AiOutlineShareAlt } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import MiddlePage from "./MiddlePage";
 import { Dasboardfrom } from "./Dasboardfrom";
 
@@ -17,14 +17,14 @@ const Dashboard = () => {
   return (
     <>
       <Box w="100vw" height={"90vh"}>
-        <Box w="90%" m="auto" display={"flex"} justifyContent={"space-between"}>
-          <Box>Market Details</Box>
-          <Box>Select Market</Box>
+        <Box w="90%" m="auto" display={"flex"} p="2" justifyContent={"space-between"}>
+          <Box fontWeight={"600"}>Market Details</Box>
+          <Box fontWeight={"600"}>Select Market</Box>
         </Box>
 
         {/* --------- Heading line ------------ */}
 
-        <Box border={"1px solid yellow"} w="90vw" m="auto" mt="10px" h="10vh">
+        <Box border={"1px solid gray"} w="90vw" m="auto" mt="10px" h="10vh">
           <Tabs position="relative" variant="unstyled">
             <TabList>
               <Tab> <AiFillStar/> </Tab>
@@ -56,12 +56,13 @@ const Dashboard = () => {
         {/* -------------------------- Search bar and currency -------------------------- */}
 
         <Box
-          border="1px solid black"
+          border="1px solid gray"
           w="90vw"
           m="auto"
-          mt="5px"
+          mt="10px"
           display={"flex"}
           justifyContent={"space-between"}
+          p="2"
         >
           <Box
             w="50%"
@@ -69,18 +70,19 @@ const Dashboard = () => {
             display={"flex"}
             justifyContent={"space-around"}
           >
-            <Box w="5vw" m="auto" >
+            <Box w="8vw" m="auto" >
               <Text fontSize={".6rem"}> Currency </Text>
-              <Select
-                icon={<MdArrowDropDown />}
-                placeholder="INR INR INR INR"
-              />
+          
+               <Select   icon={<MdArrowDropDown />} placeholder="INR">
+                <option value="INR">INR </option>
+                <option value="INR">INR </option>
+              </Select>
             </Box>
 
-            <Box w="10vw" m="auto" >
+            <Box w="12vw" m="auto" >
               <Text fontSize={".6rem"}> Payment Methods </Text>
-              <Select placeholder="Select option">
-                <option value="option1">Phone pe </option>
+              <Select placeholder="Phone pe">
+                <option value="phone pe">Phone pe </option>
                 <option value="option2">Google pay</option>
                 <option value="option3">Net banking</option>
               </Select>

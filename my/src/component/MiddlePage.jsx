@@ -16,9 +16,10 @@ const MiddlePage = () => {
         m="auto"
         display={"flex"}
         justifyContent={"space-between"}
-        mt="10px"    gap="5px">
+        flexDirection={{base:"column",md:"column",lg:"row"}}
+        mt="20px"    gap="5px">
 
-        <Box w="50%">
+        <Box border=".5px solid gray" w={{base:"80%",md:"80%",lg:"50%"}} m={{base:"auto"}} >
           <Box boxShadow={"2xl"} p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
