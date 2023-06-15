@@ -29,7 +29,7 @@ const Rightpage = () => {
         {/* --------top heading------- */}
 
         <Box
-          bg="red.200"
+          bg="#f2d574"
           borderRadius={"5px"}
           p="1"
           w="90%"

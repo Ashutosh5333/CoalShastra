@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Divider, Text } from "@chakra-ui/react";
 import { AiFillStar, AiOutlineShareAlt } from "react-icons/ai";
 import { FaDownload, FaInfo } from "react-icons/fa";
 import { GiUsaFlag } from "react-icons/gi";
@@ -19,8 +19,8 @@ const MiddlePage = () => {
         flexDirection={{base:"column",md:"column",lg:"row"}}
         mt="20px"    gap="5px">
 
-        <Box border=".5px solid gray" w={{base:"80%",md:"80%",lg:"50%"}} m={{base:"auto"}} >
-          <Box boxShadow={"2xl"} p="2">
+        <Box border=".5px solid gray" w={{base:"80%",md:"80%",lg:"50%"}} boxShadow={"2xl"} m={{base:"auto"}} >
+          <Box  p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
                 <Text fontSize={".8rem"} color="#591ad6">
@@ -122,9 +122,10 @@ const MiddlePage = () => {
             </Box>
           </Box>
 
+           <Divider />
           {/* ---------------- complete1 ------------  */}
 
-          <Box boxShadow={"2xl"} p="2">
+          <Box  p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
                 <Text fontSize={".8rem"} color="#591ad6">
@@ -233,7 +234,7 @@ const MiddlePage = () => {
 
           {/* ------------------ complete 2 -----------  */}
 
-          <Box boxShadow={"2xl"} p="2">
+          <Box p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
                 <Text fontSize={".8rem"} color="#591ad6">

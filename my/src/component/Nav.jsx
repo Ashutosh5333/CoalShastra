@@ -10,18 +10,12 @@ const Nav = () => {
     <>
       <Box
         border="3px solid blue"
-        h="10vh"
+        h="13vh"
         display={"flex"}
         justifyContent={"space-around"}
         bg="blue"
       >
       
-      
-      {/* ---------- */}
-      {
-      
-
-      }
 
 
 
@@ -31,7 +25,7 @@ const Nav = () => {
 
          {/* ---------------- */}
 {
-  !SmallScreen && <Box  w="60vw">
+  !SmallScreen && <Box   w="60vw" m="auto" mt="15px" >
           <Tabs position="relative" variant="unstyled">
             <TabList color="#FFFFFF">
               <Tab>Home </Tab>
@@ -47,11 +41,10 @@ const Nav = () => {
               
               </TabPanel>
               <TabPanel>
-                {/* <p>two!</p> */}
+             
               </TabPanel>
               <TabPanel>
                 
-                {/* <Dashboard/> */}
 
               </TabPanel>
             </TabPanels>
