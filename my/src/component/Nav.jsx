@@ -4,6 +4,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import Dashboard from "./Dashboard";
 import {Link} from "react-router-dom"
 
+
 const Nav = () => {
   const SmallScreen = useBreakpointValue({ base: true, md: false, lg: false });
 
@@ -29,11 +30,21 @@ const Nav = () => {
   !SmallScreen && <Box   w="60vw" m="auto" mt="15px" >
           <Tabs position="relative" variant="unstyled">
             <TabList color="#FFFFFF">
+              <Link to="/">
               <Tab>Home </Tab>
+              </Link>
+              <Link to="/list">
               <Tab>My Listing </Tab>
+              </Link>
+              <Link to="/market">
               <Tab>Market</Tab>
-              <Tab>inbox </Tab>
+              </Link>
+               <Link to="/inbox">
+              <Tab>Inbox </Tab>
+               </Link>
+               <Link to="/brand">
               <Tab>Brand Stores </Tab>
+               </Link>
             </TabList>
             <TabIndicator  mt="-1.5px" height="2px"  bg="blue.500" borderRadius="1px"
 />

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
     <Box  h="100vh">
-    <Nav/>
+ 
 
     <Dashboard/>
 

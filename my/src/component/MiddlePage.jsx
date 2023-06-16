@@ -6,6 +6,9 @@ import { GiUsaFlag } from "react-icons/gi";
 import { ImLocation2 } from "react-icons/im";
 import { MdOutlineMapsHomeWork } from "react-icons/md";
 import Rightpage from "./Rightpage";
+import {data} from "./data"
+
+ console.log(data)
 
 
 const MiddlePage = () => {
@@ -19,12 +22,17 @@ const MiddlePage = () => {
         flexDirection={{base:"column",md:"column",lg:"row"}}
         mt="20px"    gap="5px">
 
-        <Box border=".5px solid gray" w={{base:"80%",md:"80%",lg:"50%"}} boxShadow={"2xl"} m={{base:"auto"}} >
-          <Box  p="2">
+        <Box border=".5px solid gray" w={{base:"80%",md:"80%",lg:"50%"}} boxShadow={"2xl"} m={{base:"auto"}} 
+         overflow="scroll" h="80vh"
+        >
+
+        {
+           data.length > 0 && data.map((el) =>{
+             return <Box  p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
                 <Text fontSize={".8rem"} color="#591ad6">
-                  IOANNIS{" "}
+                    {el.title}
                 </Text>
               </Box>
 
@@ -60,16 +68,16 @@ const MiddlePage = () => {
                 <Text color="red" textAlign={"center"} mt="5px">
                   <GiUsaFlag />
                 </Text>
-                <Text fontSize={"0.8rem"}>United States | </Text>
+                <Text fontSize={"0.8rem"}>{el.Country} | </Text>
               </Box>
               <Box display="flex" flexDirection={"row"} m="auto">
                 <Text textAlign={"center"}>
                   <ImLocation2 />
                 </Text>
-                <Text fontSize={"0.8rem"}> Tuna Port </Text>
+                <Text fontSize={"0.8rem"}> {el.Port} </Text>
               </Box>
               <Box display="flex" flexDirection={"row"} m="auto">
-                <Text fontSize={"0.8rem"}> | 5906 INAR (Kcal/kg) </Text>
+                <Text fontSize={"0.8rem"}> | {el.Kgcl} </Text>
               </Box>
             </Box>
 
@@ -87,9 +95,8 @@ const MiddlePage = () => {
                   <MdOutlineMapsHomeWork />{" "}
                 </Text>
                 <Text mr="2px" fontSize={"1rem"} fontWeight={"600"}>
-                  {" "}
-                  IOANNIS, San Nicolas, abc contract , abc contract US
-                  COAL,Chandrapur - HLC -2{" "}
+              
+                  {el.description}
                 </Text>
               </Box>
             </Box>
@@ -102,7 +109,7 @@ const MiddlePage = () => {
                   {" "}
                   Bid Price /MT{" "}
                 </Text>
-                <Text fontWeight={"600"}> INR 0.00 </Text>
+                <Text fontWeight={"600"}> {el.currency} 0.00 </Text>
               </Box>
 
               <Box m="auto">
@@ -120,11 +127,23 @@ const MiddlePage = () => {
                 <Text fontWeight={"600"}> INR 0.00 </Text>
               </Box>
             </Box>
+
+            <Divider />
           </Box>
+          
 
-           <Divider />
+           })
+
+
+        }
+          
+
+     
+
+
+
           {/* ---------------- complete1 ------------  */}
-
+{/* 
           <Box  p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
@@ -153,7 +172,6 @@ const MiddlePage = () => {
               </Box>
             </Box>
 
-            {/* ------------------------------------- */}
 
             <Box
               w="60%"
@@ -179,7 +197,7 @@ const MiddlePage = () => {
               </Box>
             </Box>
 
-            {/* ------------------------------------------------- */}
+       
             <Box
               w="90%"
               h="10vh"
@@ -204,7 +222,7 @@ const MiddlePage = () => {
               </Box>
             </Box>
 
-            {/* ------------------------------------------------------- */}
+      
 
             <Box display="flex" justifyContent={"space-evenly"}>
               <Box m="auto">
@@ -230,10 +248,10 @@ const MiddlePage = () => {
                 <Text fontWeight={"600"}> INR 0.00 </Text>
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* ------------------ complete 2 -----------  */}
-
+{/* 
           <Box p="2">
             <Box display={"flex"} justifyContent={"space-between"}>
               <Box p="5">
@@ -261,8 +279,6 @@ const MiddlePage = () => {
               </Box>
             </Box>
 
-            {/* ------------------------------------- */}
-
             <Box
               w="60%"
               display={"flex"}
@@ -286,8 +302,6 @@ const MiddlePage = () => {
                 <Text fontSize={"0.8rem"}> | 6908 INAR (Kcal/kg) </Text>
               </Box>
             </Box>
-
-            {/* ------------------------------------------------- */}
             <Box
               w="90%"
               h="10vh"
@@ -305,8 +319,6 @@ const MiddlePage = () => {
                 </Text>
               </Box>
             </Box>
-
-            {/* ------------------------------------------------------- */}
 
             <Box display="flex" justifyContent={"space-evenly"}>
               <Box m="auto">
@@ -332,7 +344,7 @@ const MiddlePage = () => {
                 <Text fontWeight={"600"}> INR 0.00 </Text>
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* ------------------ complete 3 ---------------- */}
         </Box>

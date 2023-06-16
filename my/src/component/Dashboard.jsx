@@ -73,15 +73,15 @@ const Dashboard = () => {
             <Box w="8vw" m="auto" >
               <Text fontSize={".6rem"}> Currency </Text>
           
-               <Select   icon={<MdArrowDropDown />} placeholder="INR">
-                <option value="INR">INR </option>
+               <Select   icon={<MdArrowDropDown />} >
+                <option value="USD">INR </option>
                 <option value="INR">INR </option>
               </Select>
             </Box>
 
             <Box w="12vw" m="auto" >
               <Text fontSize={".6rem"}> Payment Methods </Text>
-              <Select placeholder="Phone pe">
+              <Select >
                 <option value="phone pe">Phone pe </option>
                 <option value="option2">Google pay</option>
                 <option value="option3">Net banking</option>

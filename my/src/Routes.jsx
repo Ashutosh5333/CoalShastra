@@ -1,15 +1,23 @@
 import React from 'react'
 import {Routes ,Route } from "react-router-dom"
-import Formvali from './pages/Formvali';
 import Home from './pages/Home';
+import Brand from './pages/Brand';
+import { Market } from './pages/Market';
+import Inbox from './pages/Inbox';
+import Listing from './pages/Listing';
 
 const AllRoutes = () => {
 
 
   return (
     <Routes>
-     <Route  path="/" element={<Formvali/>} />
-     <Route  path="/dash" element={<Home/>} />
+    
+     <Route  path="/" element={<Home/>} />
+     <Route  path="/brand" element={<Brand/>} />
+     <Route  path="/market" element={<Market/>} />
+     <Route  path="/inbox" element={<Inbox/>} />
+     <Route  path="/list" element={<Listing/>} />
+   
     </Routes>
   )
 }
