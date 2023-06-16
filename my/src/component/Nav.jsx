@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Image, Text, TabIndicator, useBreakpointValue } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import Dashboard from "./Dashboard";
+import {Link} from "react-router-dom"
 
 const Nav = () => {
   const SmallScreen = useBreakpointValue({ base: true, md: false, lg: false });
@@ -18,11 +19,11 @@ const Nav = () => {
       
 
 
-
         <Box  w="10vw" m={{base:"",lg:"auto"}} mt={{base:"20px"}} >
+          <Link to="/"> 
           <Image src="https://coalshastra.com/images/coalshastra-logo-white.png" />
+          </Link>
         </Box>
-
          {/* ---------------- */}
 {
   !SmallScreen && <Box   w="60vw" m="auto" mt="15px" >
